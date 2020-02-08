@@ -6,7 +6,7 @@
 	import Movie from './Movie.svelte';
 	import MovieSearch from './MovieSearch.svelte';
 	let userQuery="you";
-	let randQueryArray=["Fast", "Avengers", "Marvel", "recently", "discovered", "I", "could", "make", "fudge", "with", "just", "chocolate", "chips", "sweet", "mission", "milk", "vanilla", "extract", "and", "a", "thick", "pot", "on", "slow", "heat", "tried", "it", "dark", "chunks", "semi", "sweet", "It's", "better", "both", "kinds", "It", "comes", "out", "pretty", "bad", "the", "The", "best", "are", "crushed", "almonds", "marshmallows", "what", "you", "get", "from", "that", "is", "Rocky", "Road", "takes", "about", "twenty", "minutes", "start", "to", "fridge", "then", "six", "months", "work", "off", "pounds", "gain", "eating", "All", "things", "in", "moderation", "friends"];
+	let randQueryArray=["Fast", "Avengers", "Marvel", "recently", "discovered", "could", "make", "fudge", "with", "just", "chocolate", "chips", "sweet", "mission", "milk", "vanilla", "extract", "and", "thick", "pot", "on", "slow", "heat", "tried", "it", "dark", "chunks", "semi", "sweet", "It's", "better", "both", "kinds", "It", "comes", "out", "pretty", "bad", "The", "best", "are", "crushed", "almonds", "marshmallows", "what", "you", "get", "from", "that", "is", "Rocky", "Road", "takes", "about", "twenty", "minutes", "start", "to", "fridge", "then", "six", "months", "work", "off", "pounds", "gain", "eating", "All", "things", "in", "moderation", "friends"];
 	
 	let randQuery = randQueryArray[Math.floor(Math.random() * randQueryArray.length)];
 	let movies;
