@@ -48,7 +48,7 @@
           Silly, Movie Suggester!
         </h1>
         <h2 class="subtitle">
-          This will suggest you movies to watch based on a word you input.
+          This Webapp suggests you movies to watch, based on a word you input.
         </h2>
       </div>
     </div>
@@ -60,7 +60,7 @@
     <div class="hero-body">
       <div class="container">
         <h1 class="subtitle">
-          Or Choose from Random Below based on Word...
+          Or Choose from Randomly selected Word...
         </h1>
         <h2 class="title">
           {randQuery}
