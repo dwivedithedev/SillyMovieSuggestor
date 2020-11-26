@@ -2,7 +2,7 @@
     export let Title;
     export let Poster;
     export let Year;
-    
+
     import 'bulma/css/bulma.css';
     </script>
     
@@ -14,10 +14,14 @@
         border-radius: 5px;
         text-align: center;
       }
+
+      .user:hover{
+        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+      }
     
       img {
         border-radius: 5px;
-        max-width: 100px;
+        max-width: 150px;
       }
     
       h3 {

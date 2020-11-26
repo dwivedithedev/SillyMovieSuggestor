@@ -6,7 +6,7 @@
 	import Movie from './Movie.svelte';
 	import MovieSearch from './MovieSearch.svelte';
 	let userQuery="you";
-	let randQueryArray=["Fast", "Avengers", "Marvel", "recently", "discovered", "could", "make", "fudge", "with", "just", "chocolate", "chips", "sweet", "mission", "milk", "vanilla", "extract", "and", "thick", "pot", "on", "slow", "heat", "tried", "it", "dark", "chunks", "semi", "sweet", "It's", "better", "both", "kinds", "It", "comes", "out", "pretty", "bad", "The", "best", "are", "crushed", "almonds", "marshmallows", "what", "you", "get", "from", "that", "is", "Rocky", "Road", "takes", "about", "twenty", "minutes", "start", "to", "fridge", "then", "six", "months", "work", "off", "pounds", "gain", "eating", "All", "things", "in", "moderation", "friends"];
+	let randQueryArray=["Fast", "Avengers", "Marvel", "Batman", "discovered", "DC", "make", "Knight", "with", "just", "chocolate", "chips", "sweet", "mission", "milk", "vanilla", "extract", "and", "thick", "pot", "Moon", "slow", "heat", "tried", "it", "dark", "chunks", "semi", "sweet", "It's", "better", "both", "kinds", "It", "comes", "out", "pretty", "bad", "The", "best", "are", "crushed", "almonds", "marshmallows", "what", "you", "get", "from", "that", "is", "Rocky", "Road", "takes", "about", "twenty", "minutes", "start", "to", "fridge", "then", "six", "months", "work", "off", "pounds", "gain", "eating", "All", "things", "in", "moderation", "friends"];
 	
 	let randQuery = randQueryArray[Math.floor(Math.random() * randQueryArray.length)];
 	let movies;
@@ -84,7 +84,7 @@
 	</div>
 	</div>
 	<footer>
-		<span>Made with ❤️ by <a href="http://www.twitter.com/realdesigntack" target='_blank'>VD @ Designtack</a>.</span>
+		<span>Powered by <a href="http://www.omdbapi.com/" target="blank"><b>Omdb</b></a> | Made with ❤️ by <a href="/" target='_blank'><b>Vaibhav</b></a>.</span>
 		<br/>
 	</footer>
 </main>
@@ -92,6 +92,7 @@
 <style>
 	span {
 	font-size:small;
+	padding: 10px;
 	}
 
 	a:hover, a:visited, a:link, a:active

@@ -1,32 +1,41 @@
 <script>
     import Movie from './Movie.svelte';
     import 'bulma/css/bulma.css';
-    import { Button } from "svelma";
-    let userQuery="brother";
+    import { Field, Input, Button } from "svelma";
+    import { onMount } from 'svelte';
     let movies;
 
 	async function handleSubmit(e){
-		e.preventDefault();
-		let response = await fetch(`http://www.omdbapi.com/?apikey=fb030055&s=${userQuery}`);
+    e.preventDefault();
+        let userQuery = document.getElementById('user_input').value;
+		    let response = await fetch(`http://www.omdbapi.com/?apikey=fb030055&s=${userQuery}`);
         movies = await response.json();
-        console.log(movies.Search);
+        //console.log(movies.Search);
     }
+
+    onMount(()=>{
+     
+    })
 
 </script>
 
 <main>
-  <div class="hero-body">
+  <div class="hero-body buttons">
     <div class="container">
-      <h2>Enter a random Word</h2>
+      <h1 class="subtitle">Enter a random Word</h1>
       <form on:submit={handleSubmit}>
-        <input type="text" bind:value={userQuery}/>
-        <button>Suggest!</button>
+        <Field>
+          <Input id="user_input" placeholder="Your random word here..." type="is-success" size="is-large"/>
+        </Field>
+        <Field>
+          <Button id="sbmt" type="submit is-primary" size="is-large" on:click={handleSubmit}>Suggest</Button> 
+        </Field> 
       </form>
       {#if movies}
       <ul class='movie-list'>
       {#each movies.Search as movie}
       <li>
-      <Movie Title={movie.Title} Poster={movie.Poster} Year={movie.Year} />
+      <Movie Title={movie.Title} Poster={movie.Poster} Year={movie.Year}/>
       </li>
       {/each}
       </ul>
